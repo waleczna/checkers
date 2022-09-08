@@ -13,7 +13,7 @@ import java.io.FileNotFoundException;
 
 public class HelloJavaFX extends Application {
     private final Image bkg = new Image("file:C:\\Users\\rycer\\Desktop\\checkers\\src\\main\\resources\\boardCheckers.png");
-    // wczytanie obrazka poporzez zmienna typu Image
+    //wczytanie obrazka poporzez zmienna typu Image
 
     @Override
     public void start(Stage stage) throws /*URISyntaxException,*/ FileNotFoundException {

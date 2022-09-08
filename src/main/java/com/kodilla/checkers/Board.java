@@ -1,5 +1,7 @@
 package com.kodilla.checkers;
 
+import com.kodilla.checkers.ai.Move;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +23,12 @@ public class Board {
 
     public void setFigure(int col, int row, Figure figure) {
         rows.get(row).getCols().set(col, figure);
+    }
+
+    public boolean move(Move move) { //metoda przeciazona /overloaded/ tym samym typie, nazwie ale innym typie parametrow
+        return move(move.getCol1(), move.getRow1(), move.getCol2(), move.getRow2()); //getterami wywolujemy ruchy z kolumn i wierszy
+        //ta metoda wywola tylko ponizsza metode rozszywajac move z nawiasu bo ponizej tylko tak ja wywolujemy
+
     }
 
     public boolean move(int col1, int row1, int col2, int row2) {
