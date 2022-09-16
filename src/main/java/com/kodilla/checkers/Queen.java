@@ -15,11 +15,9 @@ public class Queen implements Figure {
     @Override
     public String toString() {
         return getColorSymbol() + "Q";
-
     }
 
     private String getColorSymbol() {
-
         return (color == FigureColor.WHITE) ? "w" : "b";
     }
 }
